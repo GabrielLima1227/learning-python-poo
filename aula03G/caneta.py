@@ -1,7 +1,18 @@
 class Caneta:
-    def __init__(self) -> None:
+    def __init__(self, *args) -> None:
         self.modelo = ""
-        self.__ponta = 0
+        self.cor = "Azul"
+        self.__ponta = 0.0
+        self.setter_ponta(args[2])
+        self.__tampada = None
+        self.tampar()
+
+    def status(self) -> None:
+        print("Sobre a Caneta")
+        print(f"Modelo: {self.modelo}")
+        print(f"Ponta: {self.__ponta}")
+        print(f"Cor: {self.cor}")
+        print(f"Tampada: {self.__tampada}")
 
     def getter_modelo(self) -> str:
         return self.modelo
@@ -13,14 +24,13 @@ class Caneta:
     def setter_ponta(self, valor: float) -> None:
         self.__ponta = valor
 
+    def tampar(self) -> None:
+        self.__tampada = True
 
-caneta_azul = Caneta()
+    def destampar(self) -> None:
+        self.__tampada = False
 
-caneta_azul.setter_modelo("Bic Cristal")
-caneta_azul.setter_ponta(0.5)
+caneta_azul = Caneta("Bic Cristal","Azul",0.7)
 
-modelo_caneta = caneta_azul.getter_modelo()
-ponta_caneta = caneta_azul.getter_ponta()
-
-print(modelo_caneta)
-print(ponta_caneta)
+print()
+caneta_azul.status()
