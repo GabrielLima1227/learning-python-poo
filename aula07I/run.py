@@ -1,3 +1,4 @@
+# Associação de Classes
 class Interruptor:
     def __init__(self, comodo: str) -> None:
         self.comodo = comodo

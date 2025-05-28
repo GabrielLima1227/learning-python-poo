@@ -1,3 +1,4 @@
+# Variáveis de Classe
 class MinhaClasse:
     estatico = "Gabriel"
 

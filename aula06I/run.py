@@ -1,3 +1,4 @@
+# Método de Classe
 class MinhaClasse:
 
     estatico = "lhama"

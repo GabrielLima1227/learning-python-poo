@@ -1,3 +1,4 @@
+# Visibilidade em Python
 class Pessoa:
     def __init__ (self, altura, cpf) -> None:
         self.altura = altura

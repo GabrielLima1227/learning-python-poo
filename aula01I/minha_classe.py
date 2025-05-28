@@ -1,3 +1,4 @@
+# Conceitos Básicos
 class MinhaClasse:
     def __init__(self, info, elemento ): #Método Construtor
         #Uma classe pode ter atributos de qualquer tipo de dado, como int, float, str, bool, list, tuple, dict, entre outros.

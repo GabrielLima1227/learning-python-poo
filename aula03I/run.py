@@ -1,3 +1,4 @@
+# Getters/Setters e Encapsulamentos
 class MinhaClasse:
     def __init__(self) -> None:
         self.__valor = None
