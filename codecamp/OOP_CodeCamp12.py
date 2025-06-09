@@ -8,10 +8,10 @@ class Vehicle:
         self.year = year
 
     def start(self) -> None:
-        print("Vehicle is starting")
+        print("Vehicle is starting.")
 
     def stop(self) -> None:
-        print("Vehicle is stoping")
+        print("Vehicle is stoping.")
 
 class Car(Vehicle):
     def __init__(self, brand, model, year, number_of_doord, number_of_wheels) -> None:
